@@ -1,9 +1,7 @@
-num = input("Введите число: ")
-result = []
-for i in range(len(num)):
-    digit = num[i]
-    if digit == '0':
-        continue
-    zeros = len(num) - i - 1
-    result.append(digit + '0' * zeros)
-print(", ".join(result))
+import random
+n = int(input("Введите размер массива: "))
+k = int(input("Введите число, на которое проверяем кратность: "))
+arr = [random.randint(1, 100) for _ in range(n)]
+print("Сгенерированный массив:", arr)
+count = sum(1 for x in arr if x % k == 0)
+print(f"Количество элементов, кратных {k}: {count}")
