@@ -1,7 +1,6 @@
 import random
-size = int(input("Введите размер массива: "))
-num = int(input("Введите число, для проверки кратности: "))
-arr = [random.randint(1, 100) for _ in range(size)]
-count = sum(1 for x in arr if x % num == 0)
-print(f"Сгенерированный массив: {arr}")
-print(f"Количество элементов, кратных {num}: {count}")
+n = int(input("Введите размер массива: "))
+arr = [random.randint(2, 100) for _ in range(n)]
+print("Сгенерированный массив:", arr)
+sum_even_positions = sum(arr[i] for i in range(1, n, 2))
+print(f"Сумма элементов на чётных позициях: {sum_even_positions}")
