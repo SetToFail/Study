@@ -1,6 +1,6 @@
 import csv
 try:
-    with open('wares2.csv', 'r', encoding='utf-8') as file:
+    with open('/home/danina/Загрузки/Telegram Desktop/lab3/wares2.csv', 'r', encoding='utf-8') as file:
         reader = csv.DictReader(file, delimiter=';')
         for row in reader:
             try:

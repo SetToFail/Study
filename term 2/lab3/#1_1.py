@@ -24,12 +24,12 @@ def transliterate(text):
     return "".join(result)
 
 def main():
-    with open("cyrillic.txt", "r", encoding="utf-8") as file:
+    with open("/home/danina/Загрузки/Telegram Desktop/lab3/cyrillic.txt", "r", encoding="utf-8") as file:
         text = file.read()
 
     transliterated_text = transliterate(text)
 
-    with open("transliteration.txt", "w", encoding="utf-8") as file:
+    with open("/home/danina/Загрузки/Telegram Desktop/lab3/transliteration.txt", "w", encoding="utf-8") as file:
         file.write(transliterated_text)
 
 if __name__ == "__main__":

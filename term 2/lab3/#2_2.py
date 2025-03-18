@@ -19,7 +19,7 @@ def to_largest_unit(size_in_bytes):
         return f"{round(size_in_bytes / 1024)} KB"
     else:
         return f"{size_in_bytes} B"
-with open('input.txt', 'r', encoding='utf-8') as file:
+with open('/home/danina/Загрузки/Telegram Desktop/lab3/input.txt', 'r', encoding='utf-8') as file:
     lines = file.readlines()
 files_by_extension = {}
 for line in lines:
@@ -41,7 +41,7 @@ for line in lines:
 
 sorted_extensions = sorted(files_by_extension.keys())
 
-with open('output.txt', 'w', encoding='utf-8') as output_file:
+with open('/home/danina/Загрузки/Telegram Desktop/lab3output.txt', 'w', encoding='utf-8') as output_file:
     for extension in sorted_extensions:
         files_by_extension[extension]["files"].sort()
 

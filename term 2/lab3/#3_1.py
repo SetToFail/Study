@@ -1,5 +1,5 @@
 # Чтение данных из файла pipes.txt
-with open('pipes.txt', 'r', encoding='utf-8') as file:
+with open('/home/danina/Загрузки/Telegram Desktop/lab3/pipes.txt', 'r', encoding='utf-8') as file:
     lines = file.readlines()
 pipes_data = []
 used_pipes = []
