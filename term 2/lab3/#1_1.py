@@ -13,7 +13,6 @@ translit_table = {
     "Ч": "Ch", "С": "S", "М": "M", "И": "I", "Т": "T", "Ь": "'",
     "Б": "B", "Ю": "Ju", "Ё": "Jo"
 }
-
 def transliterate(text):
     result = []
     for char in text:
@@ -22,15 +21,11 @@ def transliterate(text):
         else:
             result.append(char)
     return "".join(result)
-
 def main():
-    with open("/home/danina/Загрузки/Telegram Desktop/lab3/cyrillic.txt", "r", encoding="utf-8") as file:
+    with open("/home/danina/Repositories/Study/term 2/lab3/cyrillic.txt", "r", encoding="utf-8") as file:
         text = file.read()
-
     transliterated_text = transliterate(text)
-
-    with open("/home/danina/Загрузки/Telegram Desktop/lab3/transliteration.txt", "w", encoding="utf-8") as file:
+    with open("/home/danina/Repositories/Study/term 2/lab3/transliteration.txt", "w", encoding="utf-8") as file:
         file.write(transliterated_text)
-
 if __name__ == "__main__":
     main()

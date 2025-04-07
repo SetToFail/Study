@@ -4,7 +4,7 @@ def recommend_purchases():
     max_units_per_item = 10
     items = []
     try:
-        with open('/home/danina/Загрузки/Telegram Desktop/lab3/wares.csv', 'r', encoding='utf-8') as file:
+        with open('/home/danina/Repositories/Study/term 2/lab3/wares.csv', 'r', encoding='utf-8') as file:
             reader = csv.reader(file, delimiter=';')
             for row in reader:
                 if len(row) == 2:
@@ -29,6 +29,6 @@ def recommend_purchases():
         return
     output = ", ".join(selected_items)
     print(output)
-    with open('/home/danina/Загрузки/Telegram Desktop/lab3/output.txt', 'w', encoding='utf-8') as out_file:
+    with open('/home/danina/Repositories/Study/term 2/lab3/output.txt', 'w', encoding='utf-8') as out_file:
         out_file.write(output)
 recommend_purchases()

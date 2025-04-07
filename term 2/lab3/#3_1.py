@@ -1,5 +1,4 @@
-# Чтение данных из файла pipes.txt
-with open('/home/danina/Загрузки/Telegram Desktop/lab3/pipes.txt', 'r', encoding='utf-8') as file:
+with open('/home/danina/Repositories/Study/term 2/lab3/pipes.txt', 'r', encoding='utf-8') as file:
     lines = file.readlines()
 pipes_data = []
 used_pipes = []
@@ -15,7 +14,6 @@ for line in lines:
         pipes_data.append(float(line))
 total_speed = 0
 for pipe in used_pipes:
-    # Номер трубы соответствует индексу + 1
     pipe_index = pipe - 1
     if 0 <= pipe_index < len(pipes_data):
         total_speed += 1 / pipes_data[pipe_index]

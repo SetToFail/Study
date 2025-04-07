@@ -24,7 +24,6 @@ class DrawingArea(QWidget):
         start_x = 50
         start_y = 50  
         a = self.a
-
         center_x = start_x + a / 2
         center_y = start_y + a / 2
 

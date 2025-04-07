@@ -1,6 +1,6 @@
 total_cost = 0.0
 try:
-    with open('/home/danina/Загрузки/Telegram Desktop/lab3/prices.txt', 'r', encoding='utf-8') as file:
+    with open('/home/danina/Repositories/Study/term 2/lab3/prices.txt', 'r', encoding='utf-8') as file:
         lines = file.readlines()
         if not lines:
             print("0.00")

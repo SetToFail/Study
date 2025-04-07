@@ -14,7 +14,7 @@ while True:
             eligible_students.append([surname, name] + scores + [total])
     except EOFError:
         break
-with open('/home/danina/Загрузки/Telegram Desktop/lab3/exam.csv', 'w', encoding='cp1251', newline='') as file:
+with open('/home/danina/Repositories/Study/term 2/lab3/exam.csv', 'w', encoding='cp1251', newline='') as file:
     writer = csv.writer(file, delimiter=';')
     writer.writerow(["Фамилия", "имя", "результат 1", "результат 2", "результат 3", "сумма"])
     writer.writerows(eligible_students)

@@ -56,11 +56,11 @@ class FileProcessorApp(QWidget):
                 self.max_value_label.setText(f"Максимальное значение = {max_value}")
                 self.min_value_label.setText(f"Минимальное значение = {min_value}")
                 self.avg_value_label.setText(f"Среднее значение = {avg_value:.2f}")
-                with open("/home/danina/Загрузки/Telegram Desktop/lab3/out.txt", "w") as out_file:
+                with open("/home/danina/Repositories/Study/term 2/lab3/out.txt", "w") as out_file:
                     out_file.write(f"Максимальное значение = {max_value}\n")
                     out_file.write(f"Минимальное значение = {min_value}\n")
                     out_file.write(f"Среднее значение = {avg_value:.2f}\n")
-        except Exception as e:
+        except Exception as e: 
             QMessageBox.critical(self, "Error", f"an error has occurred: {e}")
 if __name__ == "__main__":
     app = QApplication(sys.argv)

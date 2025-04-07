@@ -13,7 +13,6 @@ class MacOrder(QWidget):
             cb = QCheckBox(item)
             self.menu_checkboxes.append(cb)
             layout.addWidget(cb)
-        
         self.order_btn = QPushButton("Заказать")
         self.order_btn.clicked.connect(self.show_order)
         layout.addWidget(self.order_btn)
@@ -30,10 +29,8 @@ class MacOrder(QWidget):
         for cb in self.menu_checkboxes:
             if cb.isChecked():
                 selected_items.append(cb.text())
-        
         order_text = "Ваш заказ:\n\n" + "\n".join(selected_items)
         self.result.setPlainText(order_text)
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = MacOrder()
