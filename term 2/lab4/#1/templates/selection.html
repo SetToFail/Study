@@ -14,8 +14,9 @@
     />
   </head>
   <body>
+    <h1 class="text-center mb-4" style="color : black">Анкета претендента </h1> 
+    <h2 class="text-center mb-4"> на участие в миссии</h2>
     <div class="container mt-4">
-      <h1 class="text-center mb-4">Анкета претендента на участие в миссии</h1>
       <form method="POST" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="last_name" class="form-label">Фамилия</label>
@@ -51,7 +52,9 @@
         </div>
 
         <div class="mb-3">
-          <label for="education" class="form-label">Образование</label>
+          <label for="education" class="form-label"
+            >Какое у Вас образование?</label
+          >
           <select class="form-select" id="education" name="education">
             <option selected>Выберите образование</option>
             <option value="primary">Начальное</option>
@@ -62,32 +65,95 @@
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Основная профессия</label>
-          <select class="form-select" name="profession">
-            <option selected>Выберите профессию</option>
-            <option value="research_engineer">Инженер-исследователь</option>
-            <option value="pilot">Пилот</option>
-            <option value="builder">Строитель</option>
-            <option value="exobiologist">Экзобиолог</option>
-            <option value="doctor">Врач</option>
-            <option value="terraform_engineer">
-              Инженер по терраформированию
-            </option>
-            <option value="climatologist">Климатолог</option>
-            <option value="radiation_specialist">
-              Специалист по радиационной защите
-            </option>
-            <option value="astrogeologist">Астрогеолог</option>
-            <option value="glaciologist">Гляциолог</option>
-            <option value="life_support_engineer">
-              Инженер жизнеобеспечения
-            </option>
-            <option value="meteorologist">Метеоролог</option>
-            <option value="rover_operator">Оператор марсохода</option>
-            <option value="cyber_engineer">Киберинженер</option>
-            <option value="navigator">Штурман</option>
-            <option value="drone_pilot">Пилот дронов</option>
-          </select>
+          <label class="form-label">Какие у Вас есть профессии?</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession1"
+              value="research_engineer"
+            />
+            <label class="form-check-label" for="profession1"
+              >Инженер-исследователь</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession2"
+              value="construction_engineer"
+            />
+            <label class="form-check-label" for="profession2"
+              >Инженер-строитель</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession3"
+              value="pilot"
+            />
+            <label class="form-check-label" for="profession3">Пилот</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession4"
+              value="meteorologist"
+            />
+            <label class="form-check-label" for="profession4">Метеоролог</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession5"
+              value="life_support"
+            />
+            <label class="form-check-label" for="profession5"
+              >Инженер по жизнеобеспечению</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession6"
+              value="radiation"
+            />
+            <label class="form-check-label" for="profession6"
+              >Инженер по радиационной защите</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession7"
+              value="doctor"
+            />
+            <label class="form-check-label" for="profession7">Врач</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="profession"
+              id="profession8"
+              value="exobiologist"
+            />
+            <label class="form-check-label" for="profession8">Экзобиолог</label>
+          </div>
         </div>
 
         <div class="mb-3">
