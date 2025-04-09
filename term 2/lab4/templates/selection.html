@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета претендента</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Анкета претендента<br>на участие в миссии</h1>
+        
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Введите фамилию</label>
+                <input type="text" name="last_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Введите имя</label>
+                <input type="text" name="first_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Введите адрес почты</label>
+                <input type="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Какое у Вас образование?</label>
+                <select name="education">
+                    <option value="primary">Начальное</option>
+                    <option value="secondary">Среднее</option>
+                    <option value="higher">Высшее</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Какие у Вас есть профессии?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="profession" value="research_engineer"> Инженер-исследователь</label>
+                    <label><input type="checkbox" name="profession" value="construction_engineer"> Инженер-строитель</label>
+                    <label><input type="checkbox" name="profession" value="pilot"> Пилот</label>
+                    <label><input type="checkbox" name="profession" value="meteorologist"> Метеоролог</label>
+                    <label><input type="checkbox" name="profession" value="life_support"> Инженер по жизнеобеспечению</label>
+                    <label><input type="checkbox" name="profession" value="radiation"> Инженер по радиационной защите</label>
+                    <label><input type="checkbox" name="profession" value="doctor"> Врач</label>
+                    <label><input type="checkbox" name="profession" value="exobiologist"> Экзобиолог</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Укажите пол</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                    <label><input type="radio" name="gender" value="female"> Женский</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Почему Вы хотите принять участие в миссии?</label>
+                <textarea name="motivation" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Приложите фотографию</label>
+                <input type="file" name="photo" id="file-upload">
+                <label for="file-upload" class="file-upload-label">Выберите файл</label>
+                <span id="file-name">Файл не выбран</span>
+            </div>
+            
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="stay_on_mars"> Готовы остаться на Марсе?
+                </label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('file-upload').addEventListener('change', function(e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : 'Файл не выбран';
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
+</body>
+</html>
