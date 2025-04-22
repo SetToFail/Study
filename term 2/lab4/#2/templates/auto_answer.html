@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="ps-3">Результаты анкеты</h2>
+    <div class="list-group">
+        <div class="list-group-item"><strong>Фамилия:</strong> {{ surname }}</div>
+        <div class="list-group-item"><strong>Имя:</strong> {{ name }}</div>
+        <div class="list-group-item"><strong>Образование:</strong> {{ education }}</div>
+        <div class="list-group-item"><strong>Профессия:</strong> {{ profession }}</div>
+        <div class="list-group-item"><strong>Пол:</strong> {{ sex }}</div>
+        <div class="list-group-item"><strong>Мотивация:</strong> {{ motivation }}</div>
+        <div class="list-group-item"><strong>Готовы остаться?</strong> {{ ready }}</div>
+    </div>
+{% endblock %}
