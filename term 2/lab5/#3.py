@@ -13,7 +13,7 @@ import aiohttp
 import hashlib
 
 # Инициализация бота и планировщика
-TOKEN = "7612718600:AAFJloW4OOjdWIkvL8vXNZ-0aR-LVJq4FT8"
+TOKEN = "Сокрытие TOKEN"
 WEATHERAPI_KEY = "1e2f733ba8004613a35132921252404"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
