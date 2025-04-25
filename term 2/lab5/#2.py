@@ -7,7 +7,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from collections import defaultdict
 
 # Инициализация бота
-TOKEN = Bot(token="7612718600:AAFJloW4OOjdWIkvL8vXNZ-0aR-LVJq4FT8")
+TOKEN = Bot(token="Сокрытие TOKEN")
 dp = Dispatcher()
 
 # 2.1 Регистрация пользователей (FSM)
