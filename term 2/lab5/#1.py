@@ -11,7 +11,7 @@ from telegram.ext import (
 )
 
 # cfg
-TOKEN = "7612718600:AAFJloW4OOjdWIkvL8vXNZ-0aR-LVJq4FT8"
+TOKEN = "TOKEN_BOT"
 BASE_DIR = Path(__file__).parent
 PHOTO_PATH = BASE_DIR / "images" / "bot_image.jpg"
 
