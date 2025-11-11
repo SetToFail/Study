@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Player",
+    "score": 14,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:09"
+  },
+  {
+    "name": "Player",
+    "score": 1,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:18"
+  },
+  {
+    "name": "Player",
+    "score": 0,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:23"
+  },
+  {
+    "name": "Player",
+    "score": 0,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:30"
+  },
+  {
+    "name": "Player",
+    "score": 0,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:41"
+  },
+  {
+    "name": "Player",
+    "score": 0,
+    "length": 3,
+    "difficulty": "medium",
+    "date": "2025-11-08 10:32:56"
+  }
+]

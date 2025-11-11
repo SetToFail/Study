@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    background-color: rgba(255, 164, 164, 0.705);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #dc3545;
+    margin-bottom: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary {
+    background-color: blue;
+    border-color: lightblue;
+}

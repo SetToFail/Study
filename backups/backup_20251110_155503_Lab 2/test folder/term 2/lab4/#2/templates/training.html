@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="bg-secondary text-white p-2">
+        {% if 'инженер' in prof.lower() or 'строитель' in prof.lower() %}
+            Инженерные тренажеры
+        {% else %}
+            Научные симуляторы
+        {% endif %}
+    </h2>
+    <img src="{{ url_for('static', filename='img/' + ('engineer_scheme.jpeg' if 'инженер' in prof.lower() or 'строитель' in prof.lower() else 'science_scheme.jpg')) }}" class="img-fluid">
+{% endblock %}

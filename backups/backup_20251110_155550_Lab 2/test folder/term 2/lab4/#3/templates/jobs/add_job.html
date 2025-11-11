@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2 class="mb-4">Добавить новую работу</h2>
+        
+        <form method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Название работы</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="mb-3">
+                <label for="work_size" class="form-label">Объем работы (часы)</label>
+                <input type="number" class="form-control" id="work_size" name="work_size" required>
+            </div>
+            <div class="mb-3">
+                <label for="collaborators" class="form-label">ID участников (через запятую)</label>
+                <input type="text" class="form-control" id="collaborators" name="collaborators" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="is_finished" name="is_finished">
+                <label class="form-check-label" for="is_finished">Работа завершена</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить работу</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

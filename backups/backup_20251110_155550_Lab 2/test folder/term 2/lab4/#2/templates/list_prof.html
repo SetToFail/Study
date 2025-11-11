@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="bg-secondary text-white p-2">Список профессий</h2>
+    {% if list_type == 'ol' %}
+        <ol class="list-group list-group-numbered">
+            {% for prof in professions %}
+                <li class="list-group-item border-0">{{ prof }}</li>
+            {% endfor %}
+        </ol>
+    {% elif list_type == 'ul' %}
+        <ul class="list-group">
+            {% for prof in professions %}
+                <li class="list-group-item border-0"> • {{ prof }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-danger">Неверный параметр списка</div>
+    {% endif %}
+{% endblock %}
