@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-учу-yellow)](https://python.org)
 [![AI](https://img.shields.io/badge/ИИ-изучаю-blue)](https://github.com)
-[![Status](https://img.shields.io/badge/Статус-студент-success)](https://github.com)
+[![Status](https://img.shields.io/badge/Статус-студент-success)](https://github.com/SetToFail)
 
 </div>
 
